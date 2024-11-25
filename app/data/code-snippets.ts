@@ -41,7 +41,7 @@ print(f"Element {target} found at index: {result}")`,
         id: '2',
         title: 'Singly Linked List',
         description: 'Basic linked list data structure with core operations',
-        language: 'c',
+        language: 'cpp',
         category: 'Data Structures',
         code: `
 #include <stdio.h>
