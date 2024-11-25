@@ -1,20 +1,20 @@
 export type CodeSnippet = {
-  id: string;
-  title: string;
-  description: string;
-  language: string;
-  code: string;
-  category: 'Algorithms' | 'Data Structures' | 'Projects' | 'Assignments' | 'GFG160';
+    id: string;
+    title: string;
+    description: string;
+    language: string;
+    code: string;
+    category: 'Algorithms' | 'Data Structures' | 'Projects' | 'Assignments' | 'GFG160';
 };
 
 export const codeSnippets: CodeSnippet[] = [
-  {
-    id: '1',
-    title: 'Binary Search Implementation',
-    description: 'Efficient binary search algorithm implementation in Python',
-    language: 'python',
-    category: 'Algorithms',
-    code: `def binary_search(arr, target):
+    {
+        id: '1',
+        title: 'Binary Search Implementation',
+        description: 'Efficient binary search algorithm implementation in Python',
+        language: 'python',
+        category: 'Algorithms',
+        code: `def binary_search(arr, target):
     left, right = 0, len(arr) - 1
     
     while left <= right:
@@ -33,17 +33,17 @@ arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 target = 7
 result = binary_search(arr, target)
 print(f"Element {target} found at index: {result}")`,
-  },
+    },
 
 
 
-  {
-    id: '2',
-    title: 'Singly Linked List',
-    description: 'Basic linked list data structure with core operations',
-    language: 'c',
-    category: 'Data Structures',
-    code: `
+    {
+        id: '2',
+        title: 'Singly Linked List',
+        description: 'Basic linked list data structure with core operations',
+        language: 'c',
+        category: 'Data Structures',
+        code: `
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -450,16 +450,16 @@ int main() {
     `,
 
 
-  },
+    },
 
 
-  {
-    id: '3',
-    title: 'Day 1 - Second Largest',
-    description: 'Given an array of positive integers arr[], return the second largest element from the array. If the second largest element doesn\'t exist then return -1.\n Note: The second largest element should not be equal to the largest element.',
-    language: 'python',
-    category: 'GFG160',
-    code: `
+    {
+        id: '3',
+        title: 'Day 1 - Second Largest',
+        description: 'Given an array of positive integers arr[], return the second largest element from the array. If the second largest element doesn\'t exist then return -1.\n Note: The second largest element should not be equal to the largest element.',
+        language: 'python',
+        category: 'GFG160',
+        code: `
 class Solution:
     def getSecondLargest(self, arr):
         if len(arr) < 2:
@@ -479,16 +479,16 @@ class Solution:
         
         
     `,
-  },
+    },
 
 
-  {
-    id: '4',
-    title: 'Coming soon...',
-    description: "Coming soon...",
-    language: 'c',
-    category: 'Data Structures',
-    code: ``,
-  }
-  // Add more code snippets here
+    {
+        id: '4',
+        title: 'Coming soon...',
+        description: "Coming soon...",
+        language: 'c',
+        category: 'Data Structures',
+        code: ``,
+    }
+    // Add more code snippets here
 ];

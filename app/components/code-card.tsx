@@ -10,6 +10,7 @@ import python from 'highlight.js/lib/languages/python';
 import cpp from 'highlight.js/lib/languages/cpp';
 import javascript from 'highlight.js/lib/languages/javascript';
 import typescript from 'highlight.js/lib/languages/typescript';
+import c from 'highlight.js/lib/languages/c';
 import 'highlight.js/styles/github-dark.css';
 
 // Register only the languages we need
@@ -17,6 +18,7 @@ hljs.registerLanguage('python', python);
 hljs.registerLanguage('cpp', cpp);
 hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('typescript', typescript);
+hljs.registerLanguage('c', c);
 
 export function CodeCard({ snippet }: { snippet: CodeSnippet }) {
   const [copied, setCopied] = useState(false);
