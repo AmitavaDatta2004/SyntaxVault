@@ -31,7 +31,7 @@ function CodeList({ selectedCategory }: { selectedCategory: string }) {
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
-  const categories = ['all', 'Algorithms', 'Data Structures', 'Projects', 'Assignments'];
+  const categories = ['all', 'Algorithms', 'Data Structures', 'Projects', 'Assignments' ,'GFG160'];
 
   return (
     <main className="min-h-screen bg-black">

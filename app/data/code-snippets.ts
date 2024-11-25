@@ -4,7 +4,7 @@ export type CodeSnippet = {
   description: string;
   language: string;
   code: string;
-  category: 'Algorithms' | 'Data Structures' | 'Projects' | 'Assignments';
+  category: 'Algorithms' | 'Data Structures' | 'Projects' | 'Assignments' | 'GFG160';
 };
 
 export const codeSnippets: CodeSnippet[] = [
@@ -34,6 +34,9 @@ target = 7
 result = binary_search(arr, target)
 print(f"Element {target} found at index: {result}")`,
   },
+
+
+
   {
     id: '2',
     title: 'Linked List Implementation',
@@ -77,6 +80,37 @@ public:
         cout << "NULL" << endl;
     }
 };`,
+
+
   },
+
+
+  {
+    id: '3',
+    title: 'Day 1 - Second Largest',
+    description: 'Given an array of positive integers arr[], return the second largest element from the array. If the second largest element doesn\'t exist then return -1.\n Note: The second largest element should not be equal to the largest element.',
+    language: 'python',
+    category: 'GFG160',
+    code: `
+class Solution:
+    def getSecondLargest(self, arr):
+        if len(arr) < 2:
+            return -1
+        
+        largest = second_largest = float('-inf')
+        
+        for num in arr:
+            if num > largest:
+                largest = num
+        
+        for num in arr:
+            if num > second_largest and num < largest:
+                second_largest = num
+        
+        return second_largest if second_largest != float('-inf') else -1
+        
+        
+    `,
+  }
   // Add more code snippets here
 ];
