@@ -519,6 +519,26 @@ class Solution:
         return arr
     `,
     },
+    {
+        id: '6',
+        title: 'Factorial of a given number',
+        description: 'A number is given. The factorial of the number is to be obtained',
+        language: 'cpp',
+        category: 'Assignments',
+        code: `
+#include<stdio.h>
+int main(){
+    int i,n,factorial=1;
+    printf("Enter the number:\n");
+    scanf("%d",&n);
+    for(i=n;i>=1;i--){
+        factorial=factorial*i;
+    }
+    printf("Factorial of %d is %d",n,factorial);
+    return 0;
+}
+    `,
+    },
 
 
 
