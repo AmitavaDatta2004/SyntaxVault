@@ -34,9 +34,6 @@ target = 7
 result = binary_search(arr, target)
 print(f"Element {target} found at index: {result}")`,
     },
-
-
-
     {
         id: '2',
         title: 'Singly Linked List',
@@ -451,8 +448,6 @@ int main() {
 
 
     },
-
-
     {
         id: '3',
         title: 'Day 1 - Second Largest',
@@ -480,9 +475,6 @@ class Solution:
         
     `,
     },
-
-
-
     {
         id: '4',
         title: 'Day 2 - Move All Zeroes to End',
@@ -507,10 +499,8 @@ class Solution:
         
     `,
     },
-
-
     {
-        id: '4',
+        id: '5',
         title: 'Day 3 - Reverse an Array',
         description: 'You are given an array of integers arr[]. Your task is to reverse the given array.',
         language: 'python',
@@ -529,6 +519,7 @@ class Solution:
         return arr
     `,
     },
+
 
 
     {
