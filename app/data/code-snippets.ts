@@ -543,11 +543,46 @@ int main(){
 
 
     {
-        id: '100000000000000',
+        id: '100000000000005',
+        title: 'Coming soon...',
+        description: "Coming soon...",
+        language: 'c',
+        category: 'Projects',
+        code: ``,
+    },
+    
+    {
+        id: '100000000000001',
         title: 'Coming soon...',
         description: "Coming soon...",
         language: 'c',
         category: 'Data Structures',
+        code: ``,
+    },
+
+    {
+        id: '100000000000002',
+        title: 'Coming soon...',
+        description: "Coming soon...",
+        language: 'c',
+        category: 'Algorithms',
+        code: ``,
+    },
+    
+    {
+        id: '100000000000003',
+        title: 'Coming soon...',
+        description: "Coming soon...",
+        language: 'c',
+        category: 'GFG160',
+        code: ``,
+    },
+    {
+        id: '100000000000004',
+        title: 'Coming soon...',
+        description: "Coming soon...",
+        language: 'c',
+        category: 'Assignments',
         code: ``,
     }
     // Add more code snippets here
