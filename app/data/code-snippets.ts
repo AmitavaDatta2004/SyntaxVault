@@ -480,10 +480,34 @@ class Solution:
         
     `,
     },
+    {
+        id: '4',
+        title: 'Day 2 - Move All Zeroes to End',
+        description: 'Given an array arr[]. Push all the zeros of the given array to the right end of the array while maintaining the order of non-zero elements. Do the mentioned change in the array in place.',
+        language: 'python',
+        category: 'GFG160',
+        code: `
+class Solution:
+    def pushZerosToEnd(self, arr):
+        non_zero_index = 0
+        
+        for i in range(len(arr)):
+            if arr[i] != 0:
+                arr[non_zero_index] = arr[i]
+                non_zero_index += 1
+        
+        while non_zero_index < len(arr):
+            arr[non_zero_index] = 0
+            non_zero_index += 1
+        
+        return arr
+        
+    `,
+    },
 
 
     {
-        id: '4',
+        id: '100000000000000',
         title: 'Coming soon...',
         description: "Coming soon...",
         language: 'c',
