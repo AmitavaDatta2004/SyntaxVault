@@ -539,6 +539,26 @@ int main(){
 }
     `,
     },
+    {
+        id: '7',
+        title: 'Day 4 - Rotate Array',
+        description: 'Given an unsorted array arr[]. Rotate the array to the left (counter-clockwise direction) by d steps, where d is a positive integer. Do the mentioned change in the array in place.',
+        language: 'python',
+        category: 'GFG160',
+        code: `
+class Solution:
+    # Function to rotate an array by d elements in counter-clockwise direction. 
+    def rotateArr(self, arr, d):
+        if not arr:
+            return
+        
+        n = len(arr)
+        
+        d = d % n
+        
+        arr[:] = arr[d:] + arr[:d]
+    `,
+    },
 
 
 
