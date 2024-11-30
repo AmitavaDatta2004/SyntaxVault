@@ -629,6 +629,25 @@ class Solution:
 
     `,
     },
+    {
+        id: '10',
+        title: 'Day 7 - Stock Buy and Sell – Multiple Transaction Allowed',
+        description: 'The cost of stock on each day is given in an array price[]. Each day you may decide to either buy or sell the stock at price[i], you can even buy and sell the stock on the same day. Find the maximum profit that you can get.',
+        language: 'python',
+        category: 'GFG160',
+        code: `
+class Solution:
+    def maximumProfit(self, prices) -> int:
+        max_profit = 0
+        n = len(prices)
+        
+        for i in range(n - 1):
+            if prices[i + 1] > prices[i]:
+                max_profit += prices[i + 1] - prices[i]
+        
+        return max_profit
+    `,
+    },
 
 
 
