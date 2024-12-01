@@ -648,6 +648,32 @@ class Solution:
         return max_profit
     `,
     },
+    {
+        id: '11',
+        title: 'Day 8 - Stock Buy and Sell – Max one Transaction Allowed',
+        description: 'Given an array prices[] of length n, representing the prices of the stocks on different days. The task is to find the maximum profit possible by buying and selling the stocks on different days when at most one transaction is allowed. Here one transaction means 1 buy + 1 Sell. If it is not possible to make a profit then return 0.',
+        language: 'python',
+        category: 'GFG160',
+        code: `
+class Solution:
+    def maximumProfit(self, prices):
+        # Initialize variables
+        min_price = float('inf')  # Start with the highest possible value
+        max_profit = 0            # Maximum profit is initially zero
+
+        # Loop through each price in the array
+        for price in prices:
+            # Update the minimum price encountered so far
+            if price < min_price:
+                min_price = price
+            # Calculate profit and update max_profit if the current profit is greater
+            elif price - min_price > max_profit:
+                max_profit = price - min_price
+
+        # Return the maximum profit found
+        return max_profit
+    `,
+    },
 
 
 
